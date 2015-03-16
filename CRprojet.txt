@@ -1,0 +1,37 @@
+Description du format PGM:
+	Le format PGM(Portable Graymap file format) est un format d'image 
+	qui consiste a afficher chaque pixel sous forme de nombre, 
+	qui varie en fonction du niveau de gris	du pixel.
+	Son nombre magique est P2 ou P5.
+	Chaque ligne ne doit pas dépasser 70 caractères.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tutoriel matrice sur python:
+	Pour initialiser une matrice carrée d'une certaine taille on  
