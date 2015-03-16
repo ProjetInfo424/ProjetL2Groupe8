@@ -7,31 +7,14 @@ Description du format PGM:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Tutoriel matrice sur python:
-	Pour initialiser une matrice carrÃ©e d'une certaine taille on  
+	Une matrice n'est qu'autre qu'un tableau a 2 dimensions.
+Pour initialiser ce tableau on met: 
+t=[[couleur2 for x in range(taille)] for x in range (taille)].
+
+ici, couleur2 correspond a l'entier que l'on veut mettre a chaque case de la matrice, le premier for correspond aux lignes et le 2eme correspond aux colonnes.
+ 
+Ainsi, on pourra changer les valeurs de couleur2 avec un autre entier pour créer des figures: t[i][j]=couleur (ici on met la case de la matrice a la ligne i et a la colonne j a la valeur couleur). Par exemple avec la procedure rectangle, on aura:
+
+ 
+
