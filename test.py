@@ -45,23 +45,20 @@
 
 
 
-def triangle (taille, couleur):
-    tab=[[]]
-    for i in range (taille):
-        for j in range(taille):
-            
-   
-            if i==j:
-                print(tab[couleur][couleur])
-            if j==0:
-                tab[i][j]=tab[couleur][couleur]
-            if i== taille:
-                ttab[i][j]=tab[couleur][couleur]
-            else:
-                tab[i][j]=tab[0][0]
-    print(tab)
 
-triangle(5,5)
+def triangle (larg,longe, couleur):
+    ma=[couleur]
+    for i in range (0,longe,1):
+        for j in range(0,longe,1):
+            if i==j:
+                ma[i][j]=[couleur][couleur]
+            if j==0:
+                ma[i][j]=[couleur][couleur]
+        if i==longe:
+            ma[i][j]=[couleur][couleur]
+            else:
+                ma[i][j]=[0][0]
+        print (ma[i][j])
 
 
 
