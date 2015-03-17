@@ -11,7 +11,7 @@ def cercle(x, y, rayon, hauteur_image,largeur_image, couleurf, couleuri ):
 #hauteur_image : la hauteur de l'image
 #largeur_image : la largeur de l'image        
 
-	t=[[couleuri for x in range(largeur_image)] for x in range(hauteur_image )]
+	t=[[couleuri for x in range(largeur_image)] for x in range(hauteur_image)]
 
 	for i in range (hauteur_image):
 		for j in  range (largeur_image):
