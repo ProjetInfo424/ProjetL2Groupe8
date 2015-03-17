@@ -3,19 +3,19 @@ ESTOPINAN RAPHAEL
 GARCIN LEO
 L2 STIC-INFORMATIQUE
 
-PROJET: SYNTHESE ET ANALYSE DÕIMAGE
+PROJET: SYNTHESE ET ANALYSE D'IMAGE
 
 LANGAGES CHOISI:
 
--PYTHON: GENERATEUR DÕIMAGE
--JAVA: ANALYSE DÕIMAGE
+-PYTHON: GENERATEUR D'IMAGE
+-JAVA: ANALYSE D'IMAGE
 
-GESTINNAIRE DE VERSION : GitHub
+GESTIONNAIRE DE VERSION : GitHub
 
 SEANCE 1: A LA DECOUVERTE DE LINUX ET GitHub
 	
--sÕapproprier linux avec les commandes bash de base (cd , ls, mkdir etcÉ)
--cration dÕun compte sur Github 
+-sÕapproprier linux avec les commandes bash de base (cd , ls, mkdir etc)
+-creation dÕun compte sur Github 
 -connexion au serveur et clonage des fichiers (git clone ..)
 -envoie de fichier sur le gestionnaire( git add..git commit...git push)
 
@@ -23,8 +23,8 @@ SEANCE 1: A LA DECOUVERTE DE LINUX ET GitHub
 SEANCE 2: Github et les conflits 
 
 -prise en main complete de github
--rsolution de conflit:
-reception du fichier modifier avant dÕenvoyer une nouvelle modification pour rsoudre un conflit ->git pull et ensuite git push
+-resolution de conflit:
+reception du fichier modifier avant d'envoyer une nouvelle modification pour resoudre un conflit ->git pull et ensuite git push
 
 
 
