@@ -14,7 +14,7 @@ def cercle(x, y, rayon, couleur, hauteur_image,largeur_image ):
 	for i in range (hauteur_image):
 		for j in  range (largeur_image):
 			if sqrt((x-i)**2 + (y-j)**2)<=rayon:
-                        #Pour chaque pixel on verifie si il est a une distance inferieure ou egale au rayon
+                        #Pour chaque pixel on verifie si il est a une distance inferieure ou egale au rayon du centre.
 				t[i][j]=couleur;
 	for i in range(hauteur_image):
 		print("");
