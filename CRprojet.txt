@@ -28,7 +28,7 @@ reception du fichier modifier avant d’envoyer une nouvelle modification pour rés
 
 
 
-SEANCE 3: LES DIFFERANTS FORMATS D’IMAGE ET LES PREMIERES LIGNES DE CODE (PYTHON)
+SEANCE 3: LES DIFFERENTS FORMATS D'IMAGE ET LES PREMIERES LIGNES DE CODE (PYTHON)
 
 -Prise de connaissance du format standart PGM
 
@@ -39,23 +39,23 @@ Description du format PGM:
 	Son nombre magique est P2 ou P5.
 	Chaque ligne ne doit pas dépasser 70 caractères.
 
-- exécution en ligne(terminal unix(noyau sous mac), linux) d’un exemple trouvé sur wikipedia que l’on a codé avec python
+- execution en ligne(terminal unix(noyau sous mac), git bash sous windows et linux) d'un exemple trouve sur wikipedia que l'on a code avec python
 
--premiere fonction ->création d’un rectangle au format PGM à l’aide de matrice 
+-premiere fonction ->creation d'un rectangle au format PGM à l'aide de matrice 
 
 Tutoriel matrice sur python:
 
-	Une matrice n'est qu'autre qu'un tableau a 2 dimensions.
+	Une matrice n'est autre qu'un tableau a 2 dimensions.
 Pour initialiser ce tableau on met: 
-t=[[couleur2 for x in range(taille)] for x in range (taille)].
+t=[[couleuri for x in range(largeuri)] for x in range (hauteuri)]
 
-ici, couleur2 correspond a l'entier que l'on veut mettre a chaque case de la matrice, le premier for correspond aux lignes et le 2eme correspond aux colonnes.
+ici, couleuri correspond a l'entier que l'on veut mettre a chaque case de la matrice (de l'image), le premier for correspond aux colonnes et le 2eme correspond aux lignes.
 
-Ainsi, on pourra changer les valeurs de couleur2 avec un autre entier pour crÈer des figures: t[i][j]=couleur (ici on met la case de la matrice a la ligne i et a la colonne j a la valeur couleur).
+Ainsi, on pourra changer les valeurs de couleuri avec un autre entier pour crÈer des figures: t[i][j]=couleurf (ici on met la case de la matrice a la ligne i et a la colonne j a la valeur couleurf).
 
 
-	Une matrice et un ensemble de pixel, chaque pixel et représenté par un chiffre qui lui indique sa couleur(son niveau de gris,ici format PGM),
-	ceci formant une imagecompréhensible au format choisit seulement si l’on respecte les règles du format (cité au dessus pour le format PGM).
+	Une matrice est un ensemble de pixel, chaque pixel est represente par un chiffre qui lui indique sa couleur(son niveau de gris,ici format PGM),
+	Ceci formant une image comprehensible au format choisit seulement si l'on respecte les regles du format (citees au dessus pour le format PGM).
 
 
 
