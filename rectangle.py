@@ -1,18 +1,30 @@
-def rectangle(posx,posy,longueur,largeur,couleur,couleur2,taille):
-    t=[[couleur2 for x in range(taille)] for x in range (taille)]
-    taillev=longueur+posx;
-    tailleh=largeur+posy;
-    if taillev > taille or tailleh > taille:
+def rectangle(posx,posy,largeurf,hauteurf,largeuri,hauteuri,couleurf,couleuri):
+    ## Cette procedure permet de créer un rectangle. Ses paramètres sont:
+    ## posx --> position de la figure par rapport a l'abscisse 
+    ## posy --> position de la figure par rapport a l'ordonnée
+    ## largeurf --> largeur de la figure (horizontale) 
+    ## hauteurf --> hauteur de la figure (verticale)
+    ## largeuri --> largeur de l'image (horizontale)
+    ## hauteuri --> hauteur de l'image (verticale)
+    ## couleurf --> couleur de la figure (un entier)
+    ## couleuri --> couleur de l'image (un entier)
+    
+    t=[[couleuri for x in range(largeuri)] for x in range (hauteuri)]
+    
+    taillev=largeurf+posx;
+    tailleh=hauteurf+posy;
+    
+    if taillev > largeuri or tailleh > hauteuri:
         print("Votre dessin a depassé la matrice");
     else:
         
-        for i in range(posx,longueur+posx,1):
-            for j in range(posy,largeur+posy,1):
-                t[i][j]=couleur;
-        for i in range(taille):
+        for i in range(posy,hauteurf+posy,1):
+            for j in range(posx,largeurf+posx,1):
+                t[i][j]=couleurf;
+        for i in range(hauteuri):
             print("");
     
-            for j in range(taille):
+            for j in range(largeuri):
                 print(str(t[i][j]),end=" ");
 
     
