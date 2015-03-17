@@ -1,3 +1,4 @@
+
 from math import sqrt
 #On a besoin de la bibliotheque python math pour utiliser la fonction racine carrée
 def cercle(x, y, rayon, couleur, hauteur_image,largeur_image ):
@@ -21,3 +22,14 @@ def cercle(x, y, rayon, couleur, hauteur_image,largeur_image ):
 	
 		for j in range(largeur_image):
 			print(str(t[i][j]),end=" ");
+def save():
+
+def sauve(image,fichier):
+    """Sauvegarde l'image dans un fichier.
+        L'extension du fichier est automatiquement ajoutÃ©e."""
+           
+           f = open(fichier , "w")
+               f.write("P2" + "\n"+image)
+
+sauve(cercle(10, 10, 7, 1, 30,30),cercle.pgm)
+
