@@ -14,8 +14,8 @@ GESTIONNAIRE DE VERSION : GitHub
 
 SEANCE 1: A LA DECOUVERTE DE LINUX ET GitHub
 	
--sÕapproprier linux avec les commandes bash de base (cd , ls, mkdir etc)
--creation dÕun compte sur Github 
+-s'approprier linux avec les commandes bash de base (cd , ls, mkdir etc)
+-creation d'un compte sur Github 
 -connexion au serveur et clonage des fichiers (git clone ..)
 -envoie de fichier sur le gestionnaire( git add..git commit...git push)
 
@@ -37,11 +37,11 @@ Description du format PGM:
 	qui consiste a afficher chaque pixel sous forme de nombre, 
 	qui varie en fonction du niveau de gris	du pixel.
 	Son nombre magique est P2 ou P5.
-	Chaque ligne ne doit pas dŽpasser 70 caractres.
+	Chaque ligne ne doit pas depasser 70 caracteres.
 
 - execution en ligne(terminal unix(noyau sous mac), git bash sous windows et linux) d'un exemple trouve sur wikipedia que l'on a code avec python
 
--premiere fonction ->creation d'un rectangle au format PGM ˆ l'aide de matrice 
+-premiere fonction ->creation d'un rectangle au format PGM a l'aide de matrice 
 
 Tutoriel matrice sur python:
 
@@ -51,7 +51,7 @@ t=[[couleuri for x in range(largeuri)] for x in range (hauteuri)]
 
 ici, couleuri correspond a l'entier que l'on veut mettre a chaque case de la matrice (de l'image), le premier for correspond aux colonnes et le 2eme correspond aux lignes.
 
-Ainsi, on pourra changer les valeurs de couleuri avec un autre entier pour créer des figures: t[i][j]=couleurf (ici on met la case de la matrice a la ligne i et a la colonne j a la valeur couleurf).
+Ainsi, on pourra changer les valeurs de couleuri avec un autre entier pour creer des figures: t[i][j]=couleurf (ici on met la case de la matrice a la ligne i et a la colonne j a la valeur couleurf).
 
 
 	Une matrice est un ensemble de pixel, chaque pixel est represente par un chiffre qui lui indique sa couleur(son niveau de gris,ici format PGM),
