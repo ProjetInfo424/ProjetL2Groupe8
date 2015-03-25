@@ -26,7 +26,7 @@ def rectangle(posx,posy,largeurf,hauteurf,largeuri,hauteuri,couleurf,couleuri):
             print("");
     
             for j in range(largeuri):
-                print(str(t[i][j]),end=" ");
+                print(str(t[i][j]),end= " ");
 
     
 
