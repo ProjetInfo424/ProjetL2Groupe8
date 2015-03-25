@@ -13,6 +13,8 @@ LANGAGES CHOISI:
 
 GESTIONNAIRE DE VERSION : GitHub
 
+
+
 SEANCE 1: A LA DECOUVERTE DE LINUX ET GitHub
 	
 -s'approprier linux avec les commandes bash de base (cd , ls, mkdir etc)
@@ -30,6 +32,9 @@ reception du fichier modifier avant d'envoyer une nouvelle modification pour res
 
 
 SEANCE 3: LES DIFFERENTS FORMATS D'IMAGE ET LES PREMIERES LIGNES DE CODE (PYTHON)
+
+
+
 
 -Prise de connaissance du format standart PGM
 
@@ -58,15 +63,28 @@ Ainsi, on pourra changer les valeurs de couleuri avec un autre entier pour creer
 	Une matrice est un ensemble de pixel, chaque pixel est represente par un chiffre qui lui indique sa couleur(son niveau de gris,ici format PGM),
 	Ceci formant une image comprehensible au format choisit seulement si l'on respecte les regles du format (citees au dessus pour le format PGM).
 
+
+
+
 SEANCE 5: LES FORMES GEOMETRIQUES
 
 -création au format pgm d’une matrice formant un cercle et d’une matrice formant un triangle
+
+
 
 SEANCE 6: 
 
 -léo garcin : modification de la fonction de synthèse du cercle , début du code du triangle avec l’algorithme de Bresenham et recherche sur le format ppm.
 -Raphael Estopinan : Finition du rectangle et ajout de commentaire.
 -Mohamed Ouali Alami : mise a jour du  compte rendu et avec léo le codage du triangle .
+
+
+
+SEANCE 7:
+
+-Raphael Estopinan : Creation segment  du triangle et ouverture de l’image en ligne de commande au format pgm
+-Mohamed Ouali Alami :Finition du triangle et mise  a jour depot et compte rendu 
+
 		
 
 
