@@ -11,7 +11,7 @@ def trace_segment(t,x0,y0,x1,y1,couleurf):
         x1=tmp
         tmp2=y0
         y0=y1
-        y1=tmp2
+        y1=tmp2 
         
     deltax = x1-x0
     deltay = y1-y0
