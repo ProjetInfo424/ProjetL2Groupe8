@@ -6,15 +6,15 @@ Lire : Lire.java
 	
 
 
-triangle : triangle.py 
+figure : figures.py 
 	
-	python3 -m py_compile triangle.py
-	python3 triangle.py
+	python3 -m py_compile figures.py
+	python3 figures.py
 	
 
 
 clean:
 	
 	rm -f Lire.class
-	rm -f triangle.pyc
+	rm -f figures.pyc
 
