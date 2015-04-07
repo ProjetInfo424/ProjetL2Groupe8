@@ -6,7 +6,7 @@ Lire : Lire.java
 	
 
 
-triangle : figures.py 
+figure : figures.py 
 	
 	python3 -m py_compile figures.py
 	python3 figures.py
