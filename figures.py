@@ -118,3 +118,16 @@ def triangle(x0,y0,x1,y1,x2,y2,largeuri,hauteuri,couleurf,couleuri):
 
 if __name__ == '__main__':
     print(argv)
+def Lire_arg(argv):
+    if argv[1]=="-cercle":
+        cercle(int(argv[2]), int(argv[3]), int(argv[4]), int(argv[5]), int(argv[6]), int(argv[7]), int(argv[8]));
+    elif argv[1]=="-rectangle":
+        rectangle(int(argv[2]),int(argv[3]),int(argv[4]),int(argv[5]),int(argv[6]),int(argv[7]),int(argv[8]),int(argv[9]));
+    elif argv[1]=="-triangle":
+        triangle(int(argv[2]),int(argv[3]),int(argv[4]),int(argv[5]),int(argv[6]),int(argv[7]),int(argv[8]),int(argv[9]),int(argv[10]),int(argv[11]));
+    else :
+        print("Vos arguments ne sont pas valides, pour plus d'informations veuillez consulter le README.txt");
+
+
+
+Lire_arg(argv);
