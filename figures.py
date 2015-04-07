@@ -2,7 +2,7 @@ from math import sqrt
 #On a besoin de la bibliotheque python math pour utiliser la fonction racine carrée
 
 def matrice(largeuri,hauteuri,couleuri):
-    t=[[couleuri for x in range(largeuri)] for x in range (hauteuri)];
+    t=[[couleuri for x in range(hauteuri)] for x in range (largeuri)];
     return t
     
     
@@ -26,13 +26,13 @@ def rectangle(posx,posy,largeurf,hauteurf,couleurf,largeuri,hauteuri,couleuri):
         print("Votre dessin a depassé la matrice");
     else:
         
-        for i in range(posy,hauteurf+posy,1):
-            for j in range(posx,largeurf+posx,1):
-                t[i][j]=couleurf;
+        for i in range(posy-1,taillev-1,1):
+            for j in range(posx-1,tailleh-1,1): #on met -1 car on commence la matrice a la case 0 et non 1
+                t[j][i]=couleurf;
     for i in range(hauteuri):
         print("");
         for j in range(largeuri):
-            print(str(t[i][j]),end= " ");
+            print(str(t[j][i]),end= " ");
        
 
 
@@ -48,16 +48,18 @@ def cercle(x, y, rayon, hauteuri,largeuri, couleurf, couleuri ):
 #largeuri : la largeur de l'image        
 
     t= matrice(largeuri,hauteuri,couleuri);
+    x=x-1;
+    y=y-1 #on met -1 car on commence la matrice a la case 0 et non 1
 
     for i in range (hauteuri):
         for j in  range (largeuri):
-            if sqrt((x-i)**2 + (y-j)**2)<=rayon:
+            if sqrt((x-j)**2 + (y-i)**2)<=rayon:
             #Pour chaque pixel on verifie si il est a une distance inferieure ou egale au rayon du centre.
-                t[i][j]=couleurf;
+                t[j][i]=couleurf;
     for i in range(hauteuri):
         print("");
         for j in range(largeuri):
-            print(str(t[i][j]),end= " ");
+            print(str(t[j][i]),end= " ");
 
 
 def trace_segment(t,x0,y0,x1,y1,couleurf):
@@ -109,7 +111,9 @@ def triangle(x0,y0,x1,y1,x2,y2,largeuri,hauteuri,couleurf,couleuri):
     for i in range(hauteuri):
         print("");
         for j in range(largeuri):
-            print(str(t[i][j]),end= " ");
+            print(str(t[j][i]),end= " ");
+
+                
 
   
     
