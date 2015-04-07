@@ -1,4 +1,5 @@
 from math import sqrt
+from sys import argv
 #On a besoin de la bibliotheque python math pour utiliser la fonction racine carrée
 
 def matrice(largeuri,hauteuri,couleuri):
@@ -115,5 +116,5 @@ def triangle(x0,y0,x1,y1,x2,y2,largeuri,hauteuri,couleurf,couleuri):
 
                 
 
-  
-    
+if __name__ == '__main__':
+    print(argv)
