@@ -1,5 +1,4 @@
 from math import sqrt
-from sys import argv
 #On a besoin de la bibliotheque python math pour utiliser la fonction racine carrée
 
 def matrice(largeuri,hauteuri,couleuri):
@@ -90,7 +89,19 @@ def trace_segment(t,x0,y0,x1,y1,couleurf):
             error=error-1
             
     
-
+def triangle_rempli(t,x0,y0,x1,y1,x2,y2,largeuri,hauteuri,couleurf,couleuri):
+    compteur=0
+    liste =[]
+    
+    for i in range (hauteuri):
+        for j in range (largeuri):
+            if t[i][j] == couleurf:
+                liste = liste + [j]
+                compteur = compteur + 1
+        if compteur > 1:
+            for x in range(liste[0],liste[len(liste)-1],1):
+                t[i][x]= couleurf
+            compteur =0  
     
     
 
@@ -98,7 +109,6 @@ def triangle(x0,y0,x1,y1,x2,y2,largeuri,hauteuri,couleurf,couleuri):
     
 
     t= matrice(largeuri,hauteuri,couleuri);
-
     print( "P0 = ({},{})".format( x0, y0 ) )
     print( "P1 = ({},{})".format( x1, y1 ) )
     print( "P2 = ({},{})".format( x2, y2 ) )
@@ -106,15 +116,37 @@ def triangle(x0,y0,x1,y1,x2,y2,largeuri,hauteuri,couleurf,couleuri):
     trace_segment(t,x0,y0,x1,y1,couleurf);
     trace_segment(t,x1,y1,x2,y2,couleurf);
     trace_segment(t,x2,y2,x0,y0,couleurf);
+    triangle_rempli(t,x0,y0,x1,y1,x2,y2,largeuri,hauteuri,couleurf,couleuri)
+    
 
     for i in range(hauteuri):
         print("");
         for j in range(largeuri):
             print(str(t[j][i]),end= " ");
 
-triangle(1,3,20,25,30,2,50,50,0,1)
+if __name__ == '__main__':
+    print(argv)
+def Lire_arg(argv):
+    if argv[1]=="-cercle":
+        cercle(int(argv[2]), int(argv[3]), int(argv[4]), int(argv[5]), int(argv[6]), int(argv[7]), int(argv[8]));
+    elif argv[1]=="-rectangle":
+        rectangle(int(argv[2]),int(argv[3]),int(argv[4]),int(argv[5]),int(argv[6]),int(argv[7]),int(argv[8]),int(argv[9]));
+    elif argv[1]=="-triangle":
+        triangle(int(argv[2]),int(argv[3]),int(argv[4]),int(argv[5]),int(argv[6]),int(argv[7]),int(argv[8]),int(argv[9]),int(argv[10]),int(argv[11]));
+    else :
+        print("Vos arguments ne sont pas valides, pour plus d'informations veuillez consulter le README.txt");
+Lire_arg(argv);
+
+    
+
+  
+    
+            
+            
+            
+                
 
                 
 
-if __name__ == '__main__':
-    print(argv)
+  
+    
