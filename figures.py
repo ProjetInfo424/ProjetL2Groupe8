@@ -26,8 +26,8 @@ def rectangle(posx,posy,largeurf,hauteurf,couleurf,largeuri,hauteuri,couleuri):
         print("Votre dessin a depassé la matrice");
     else:
         
-        for i in range(posy-1,taillev-1,1):
-            for j in range(posx-1,tailleh-1,1): #on met -1 car on commence la matrice a la case 0 et non 1
+        for i in range(posy-1,taillev,1):
+            for j in range(posx-1,tailleh,1): 
                 t[j][i]=couleurf;
     for i in range(hauteuri):
         print("");
@@ -48,8 +48,6 @@ def cercle(x, y, rayon, hauteuri,largeuri, couleurf, couleuri ):
 #largeuri : la largeur de l'image        
 
     t= matrice(largeuri,hauteuri,couleuri);
-    x=x-1;
-    y=y-1 #on met -1 car on commence la matrice a la case 0 et non 1
 
     for i in range (hauteuri):
         for j in  range (largeuri):
@@ -112,6 +110,8 @@ def triangle(x0,y0,x1,y1,x2,y2,largeuri,hauteuri,couleurf,couleuri):
         print("");
         for j in range(largeuri):
             print(str(t[j][i]),end= " ");
+
+triangle(1,3,20,25,30,2,50,50,0,1)
 
                 
 
