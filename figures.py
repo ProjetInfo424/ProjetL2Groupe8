@@ -17,7 +17,7 @@ def rectangle(posx,posy,largeurf,hauteurf,couleurf1,couleurf2,couleurf3,largeuri
     ## hauteuri --> hauteur de l'image (verticale)
     ## couleurf --> couleur de la figure (un entier)
     ## couleuri --> couleur de l'image (un entier)
-    print("P3"+ "\n" + str(largeuri) + " "+ str(hauteuri)+"\n" + "255");
+    print("P3"+ "\n" + str(largeuri) + " " + str(hauteuri) +"\n" + "255");
 
 
     tab_figure=[couleurf1,couleurf2,couleurf3];
@@ -40,7 +40,8 @@ def rectangle(posx,posy,largeurf,hauteurf,couleurf1,couleurf2,couleurf3,largeuri
             enleve = enleve.replace("]", "")
             enleve = enleve.replace(",", "")
             print(enleve,end= " ");
-        print(""); 
+        print("");
+
        
 
 
@@ -160,6 +161,7 @@ def triangle(x0,y0,x1,y1,x2,y2,largeuri,hauteuri,couleurf1, couleurf2, couleurf3
 ##        print("Vos arguments ne sont pas valides, pour plus d'informations veuillez consulter le README.txt");
 ##Lire_arg(argv);
 
+rectangle(2,2,5,4,0,1,2,10,10,4,5,6)
     
 
   
