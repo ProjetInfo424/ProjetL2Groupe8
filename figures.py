@@ -6,7 +6,6 @@ def matrice(largeuri,hauteuri,couleuri1,couleuri2,couleuri3):
     tmat=[[t for x in range(hauteuri)] for x in range (largeuri)];
     return tmat
     
-    #ss
 def rectangle(posx,posy,largeurf,hauteurf,couleurf1,couleurf2,couleurf3,largeuri,hauteuri,couleuri1,couleuri2,couleuri3):
 
     ## Cette procedure permet de créer un rectangle. Ses paramètres sont:
