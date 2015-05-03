@@ -1,6 +1,13 @@
 # ProjetL2Groupe8
 Depot du projet d'info 424
 
+Telechargement du projet:
+
+Nous avons utilisé l'interface github pour partager nos fichiers du projet. Pour avoir la totalité du projet sur votre PC, il faut faire un git clone:
+
+Entrez dans la commande linux : git clone https://github.com/ProjetInfo424/ProjetL2Groupe8.git .
+
+
 Utilisation du programme de synthese:
 
   TODO -> partie make
