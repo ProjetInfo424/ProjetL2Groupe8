@@ -1,11 +1,13 @@
-all : Lire triangle
+all : Lire triangle analyse
 
-Lire : Lire.java
-	javac -classpath . Lire.java
-	java Lire
+analyse: Figure.java
+	 javac -classpath . Figure.java
+	 java Figure
+
+
+Lire : analyse
 	
-
-
+	
 figure : figures.py 
 	
 	python3 -m py_compile figures.py
@@ -14,7 +16,7 @@ figure : figures.py
 
 
 clean:
-	
+	rm -f Figure.class
 	rm -f Lire.class
 	rm -f figures.pyc
 
