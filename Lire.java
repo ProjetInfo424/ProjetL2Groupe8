@@ -1,3 +1,7 @@
+
+
+//lire
+
 import java.io.*;
 
 import java.util.ArrayList;
@@ -220,7 +224,7 @@ public class Lire {
             
         }
         
-        affiche1(k);
+        affiche2(k);
         
         
         
@@ -230,63 +234,23 @@ public class Lire {
         
     }
     
-
     
     
-    
-    // recreer la matrice avec un tableau de tableau de tableau pour ranger par (r,g,b)
-    
-    
-    public  static  ArrayList<ArrayList<ArrayList<String>>> matriceppm(){
-        
-        ArrayList<ArrayList<String>> ma= Lire.Lecture();
-      
-        ArrayList<ArrayList<ArrayList<String>>> tab1 =new  ArrayList<ArrayList<ArrayList<String>>>();
-        int i=3;
-        int j=0;
-        System.out.println( ma.get(i).size() );
-
-        
-        
-        while (i  +2< ma.size() -1) {
-
-            ArrayList<ArrayList<String>> tab2 = new ArrayList<ArrayList<String>>();
-
-
-            
-            while(j<ma.get(i).size() ){
-                
-
-                ArrayList<String> tab3= new ArrayList<String>(3) ;
-
-               
-                tab3.add(ma.get(i).get(j));
-                tab3.add(ma.get(i).get(j+1));
-                tab3.add(ma.get(i).get(j+2));
-                
-                tab2.add(tab3);
-                j=j+3;
-
-            }
-            tab1.add(tab2);
-
-            i=i+1;
-        }
-        System.out.println(  ma.get(7).get(2));
-        
-
-        affiche2(tab1);
-        
-        return tab1;
-    }
-        
+       
     
     
     
     
-  // afficher un tableau 2D
     
-    public static void affiche1(ArrayList<ArrayList<String>> m){
+    
+    
+    
+    
+    
+    
+    
+    
+    public static void affiche2(ArrayList<ArrayList<String>> m){
         
         
         
@@ -310,33 +274,6 @@ public class Lire {
         
     }
     
-   //afficher un tableau 2D d'element de tableau im
-    
-    
-    public static void affiche2( ArrayList<ArrayList<ArrayList<String>>> m){
-        
-        
-        
-        for(int i =0 ; i < m.size();i++){
-            
-            System.out.println("");
-            
-            
-            
-            for(int j =0 ; j < m.get(i).size();j++){
-                
-                
-                
-                System.out.print(m.get(i).get(j) + " ");
-            }
-            
-        }
-        
-        System.out.println();
-        
-        
-        
-    }
     
     
     
