@@ -370,7 +370,7 @@ public class Figure {
                 
             }
             
-            else if ((tab.get(j)).equals(tab.get(j +1 ))){
+            else if((tab.get(j)).equals(tab.get(j +1 ))){
                 
                 estcercle=false;
                 
@@ -402,26 +402,26 @@ public class Figure {
         
         if (esttriangle){
             
-            System.out.println();
             
             System.out.print("Forme de l'image : Triangle");
-            
+            System.out.println();
+
         }
         
         else if (estcercle){
             
-            System.out.println();
             
             System.out.print("Forme de l'image : Cercle");
-            
+            System.out.println();
+
         }
         
         else if (estinconnue){
             
-            System.out.println();
             
             System.out.print("Forme de l'image : Inconnue");
-            
+            System.out.println();
+
         }
         
         System.out.println();
