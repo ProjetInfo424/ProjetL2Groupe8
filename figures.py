@@ -216,10 +216,11 @@ def menu(forme):
         
         triangle(x0,y0,x1,y1,x2,y2,largeuri,hauteuri, couleuri ,couleurf)
 
-if __name__ == '__main__' :
+##if __name__ == '__main__' :
 
-   menu(argv[1]);
+##   menu(argv[1]);
     
+rectangle(2,2,5,4,"rouge",10,10,"bleu")
 
   
     
