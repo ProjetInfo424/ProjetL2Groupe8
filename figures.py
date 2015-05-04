@@ -13,7 +13,7 @@ def couleur_ppm (couleur) :
         return [255,255,0]
     if couleur == "rouge" :
         return [255,0,0]
-    if couleur == " violet":
+    if couleur == "violet":
         return [102, 0, 153]
     if couleur == "vert" :
         return [0 ,255, 0]
@@ -216,11 +216,10 @@ def menu(forme):
         
         triangle(x0,y0,x1,y1,x2,y2,largeuri,hauteuri, couleuri ,couleurf)
 
-##if __name__ == '__main__' :
-
-##   menu(argv[1]);
+if __name__ == '__main__' :
+	menu(argv[1]);
     
-rectangle(2,2,5,4,"rouge",10,10,"bleu")
+
 
   
     
